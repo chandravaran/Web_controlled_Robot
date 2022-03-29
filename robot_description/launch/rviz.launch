@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find robot_description)/launch/robot_description.launch"/>
+	<!-- launch rviz -->
+	<node name="rviz" pkg="rviz" type="rviz" respawn="false"
+		  args="-d $(find robot_description)/iot_robot.rviz"/>
+</launch>
